@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhoni</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            font-family: 'Proza Libre', sans-serif;
+        }
+        .main{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-direction: column;
+            /* height: 100vh; */
+        }
+        .img_card{
+            height: 300px;
+            position: absolute;
+            border-radius: 7px;
+        }
+        .about{
+            width: 800px;
+        }
+        .about p{
+            margin-top:50px ;
+        }
+        .kaka{
+            width: 800px;
+            height: 600px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img_card:nth-child(1){
+            left: 25%;
+            top: 30%;
+        }
+        .img_card:nth-child(2) {
+            height: 400px;
+            left: 40%;
+            top: 22.2%;
+            z-index: 1;
+        }
+        .img_card:nth-child(3) {
+            left: 59%;
+            top: 30%;
+        }
+        .img_card:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+            z-index: 10;
+            cursor: pointer;
+        }
+        h2{
+            font-size: 2rem;
+            margin: 0;
+        }
+        .con{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .wc2011{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 50px;
+            align-items: center;
+            width: 80%;
+            margin-bottom: 30px;
+        }
+        .wc2011 img{
+            width:310px;
+            border-radius: 9px;
+        }
+        .wc2011 img:hover{
+            transform: scale(1.1);
+            transition: 0.5s ease-in-out;
+        }
+        .t20{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 50px;
+            align-items: center;
+            width: 80%;
+            margin-bottom: 30px;
+        }
+        .t20 img{
+            width:240px;
+            border-radius: 9px;
+        }
+        .t20 img:hover{
+            transform: scale(1.1);
+            transition: 0.5s ease-in-out;
+        }
+        .ipl20{
+            margin-top: 20px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+            width: 80%;
+            margin-bottom: 30px;
+        }
+        .ipl20 img{
+            width:420px;
+            border-radius: 9px;
+        }
+        .ipl20 img:hover{
+            transform: scale(1.1);
+            transition: 0.5s ease-in-out;
+        }
+        .ipl20 p{
+            color: whitesmoke;
+            width: 100%;margin-top: 20px;
+            text-align: center;
+            font-size: 2rem;
+        }
+        .horizontal-line {
+      border: none;
+      height: 1px; /* Adjust the thickness of the line as desired */
+      background-color: white;
+      width: 50%; /* Adjust the width of the line as desired */
+      margin: 0 auto; /* Align the line to the center horizontally */
+    }
+    footer{
+        color: white;text-align: center;margin-bottom: 30px;
+    }
+        @media(max-width:800px){
+            .kaka{
+            width: 600px;
+            height: 400px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img_card:nth-child(1) {
+            left: 25%;
+            top: 23%;
+        }
+        .img_card:nth-child(2) {
+            height: 250px;
+            left: 38%;
+            top: 17%;
+            z-index: 1;
+        }
+        .img_card:nth-child(3) {
+                left: 52%;
+                top: 23%;
+    }
+        .img_card{
+            height: 200px;
+        }
+        .con p{
+            font-size: 0.6rem;
+        }
+        .wc2011 p{
+            font-size: 0.6rem;
+        }
+        .wc2011 img{
+            width:250px;
+        }
+        .wc2011{
+            flex-direction: column;
+        }
+        .t20 p{
+            font-size: 0.6rem;
+        }
+        .t20 img{
+            width:200px;
+        }
+        .t20{
+            flex-direction: column;
+        }
+        .ipl20 p{
+            font-size: 1rem;
+        }
+        .ipl20 img{
+            width:200px;
+        }
+        .ipl20{
+            flex-direction: column;
+        }
+        footer p{
+            font-size: 0.5rem;
+        }
+        }
+        @media (max-width:600px) {
+            .kaka{
+            width: 330px;
+            height: 400px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 32px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <div class="main">
+            <h2 style="color: white;text-align: center;">	Mahendra Singh Dhoni</h2>
+            <div class="con">
+                <div class="kaka">
+                    <img class="img_card" src="2.jpg" alt="dhoni3" style="    filter: drop-shadow(4px 1px 20px orange);">
+                    <img class="img_card" src="4.jpg" alt="dhoni1" style="    filter: drop-shadow(0px 2px 15px white);">
+                    <img class="img_card" src="5.jpg" alt="dhoni2" style="     filter: drop-shadow(4px 1px 20px green);">
+                </div>
+                <p style="color: whitesmoke;width: 70%; text-align: center;">
+                    Mahendra Singh Dhoni, known as MS Dhoni, is a cricketing legend whose greatness is defined by his exceptional leadership, unmatched composure, and remarkable skills. His calm demeanor under pressure, tactical acumen, and ability to make calculated decisions have earned him immense respect. As a captain, he led the Indian cricket team to significant victories in major tournaments, showcasing his ability to keep a level head and make crucial choices. Dhoni's explosive batting style and incredible finishing abilities have resulted in numerous match-winning innings, solidifying his reputation as one of the greatest finishers in the game. Off the field, his humility, dedication, and inspirational journey have made him an adored figure, inspiring millions of fans worldwide. MS Dhoni's remarkable contributions to cricket have firmly established him as a true legend and an icon of the sport.<br><br>- CHAT GPT
+                </p>
+                <hr class="horizontal-line">
+                <div class="wc2011">
+                    <img src="8.webp">
+                    <p style="color: whitesmoke;width: 70%; text-align: center;">“Dhoni finishes off in style. A magnificent strike into the crowd! India lift the World Cup after 28 years! - Ravi Shastri ” <br><br> In the 2011 ICC Cricket World Cup, Mahendra Singh Dhoni led the Indian cricket team to a historic victory. As the captain, Dhoni's exceptional leadership and calm demeanor played a significant role in India's success. His crucial batting performance in the final match, including a match-winning six, remains etched in the memories of cricket fans worldwide. Dhoni's contribution to the team's triumph in the 2011 World Cup will always be celebrated as a remarkable achievement in his illustrious career.</p>
+                </div>  
+                <hr class="horizontal-line">
+                <div class="t20">
+                    <p style="color: whitesmoke;width: 70%; text-align: center;">“The process is more important than the results. And if you take care of the process, you will get the results." <br><br>  MS Dhoni's greatness in the 2007 ICC World Twenty20 finals. His aggressive batting, astute captaincy, and a game-changing run-out of Younis Khan contributed to India's historic victory against Pakistan. Dhoni's performance cemented his status as one of cricket's greatest.</p>
+                    <img src="6.jpg">
+                </div> 
+                <hr class="horizontal-line">
+                <div class="t20">
+                    <img src="9.jpg">
+                    <p style="color: whitesmoke;width: 70%; text-align: center;">“I was quite nervous, things were not going my way but I hold my nerve. I've done it times in the past so maybe that's why he [Dhoni] thought I could do it. We have to say thanks to the crowd, they have been tremendous, there are no words for them. - Ishant Sharma "<br><br>In the ICC Champions Trophy 2013, MS Dhoni's exceptional leadership and batting prowess played a key role in India's success. As the captain, Dhoni made astute decisions and led the team with composure. His unbeaten innings in the final helped India secure a memorable victory and showcased his ability to perform under pressure. Dhoni's contributions in the tournament highlighted his significance as a leader and a formidable batsman.</p>
+                </div> 
+                <hr class="horizontal-line">
+                <div class="t20">
+                    <img src="12..jpg">
+                    <p style="color: whitesmoke;width: 70%; text-align: center;">“ The way they've shown their love and affection, I think that's something I need to do for them. <br>- MS Dhoni "<br>“Mahi” for fans across the nation and “Thala” for his fans down south, the cricketer has won 5 IPL trophies, making his franchise Chennai Super Kings one of the most successful franchises in the leagues.<br>
+                        MS Dhoni's IPL triumphs were more than just trophies. With each victory, he stirred emotions, captivating the hearts of millions. His calm demeanor and exceptional leadership skills inspired joy, pride, and hope. Dhoni's ability to read the game, make astute decisions, and execute strategies flawlessly made him a formidable force. The elation on his face while lifting the trophies represented the collective efforts and determination that led to those victories.</p>
+                </div> 
+                <hr class="horizontal-line">
+                <div class="ipl20">
+                    <img src="13.jpg">
+                    <p> If stumping is an art , we call him an Artist</p>
+                </div> 
+            </div>
+        </div>
+        <footer>
+            <p> &copy;Mani Sai, All Rights Reserved </p> 
+         </footer>
+
+    </body>
+</body>
+</html>
